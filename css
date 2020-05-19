@@ -1,0 +1,25 @@
+body {
+    background-color: grey;
+}
+
+
+.container {
+    width: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+p {
+    text-align: center;
+}
+
+.button {
+    background-color: black;
+    border: grey;
+    border-radius: 5px;
+    width: 30%;
+    align-self: center;
+    color: white;
+    margin-bottom: 5px;
+}

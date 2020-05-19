@@ -1,6 +1,5 @@
-
 "use strict"
-
+let color = []
 const button = document.getElementById("button")
 
 const quotes = [
@@ -22,21 +21,20 @@ function generateQuote() {
 }
 
 function generateColor() {
-    let color = []
 
     for (let i = 0 ; i < 3 ; i++)
-        color.push(Math.floor(Math.random() * 255))
-
+        color.push(Math.floor(Math.random() * 256))
     return color
 }
 
 
 function display() {
     let text = document.getElementById("quote")
-    let color = generateColor()
     text.textContent = generateQuote()
-    text.style.color = `rgb(${color[0]}, ${color[1]}, ${color[2]})`
+    
 }
 
 button.addEventListener("click", display)
+
+
 
